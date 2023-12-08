@@ -2,190 +2,227 @@
 <html lang='en'>
 
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
-    <meta name="description" content="MBZUAI Collaborative Learning 2022">
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../assets/main.css"/>
+    <meta name="description" content="MBZUAI Collaborative Learning 2023">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Program | MBZUAI Collaborative Learning 2022</title>
+    <title>2nd MBZUAI Collaborative Learning Workshop 2023</title>
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="assets/banner.jpeg" alt="MBZUAI Collaborative Learning 2022 Banner">
+        <img src="../assets/banner.jpeg" alt="MBZUAI Collaborative Learning 2023 Banner">
         <div class="top-left">
-            <span class="title2">Workshop on</span> <span class="title1">Collaborative Learning</span> 
-            <!-- <br><br> <br><br> <span class="title1">MBZUAI</span> -->
-            <br><br>
-            <span class="year">From Theory to Practice</span>
+            <span class="title2">2nd MBZUAI Workshop on</span>
+            <br><br> <span class="title1">Collaborative Learning</span> 
+            <!-- <br><br>
+            <span class="year">Empowering Sustainable Futures</span> -->
         </div>
         <div class="bottom-right">
-            October 8-9, 2022 <br> MBZUAI, Abu Dhabi
+            December 9-11, 2023 <br> MBZUAI, Abu Dhabi
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home</a>
+                <a class="current" title="Conference Home Page" href="../">Home</a>
             </td>
             <td class="navigation">
-                <a title="Conference Program Day 1" href="programday1">Program Day 1</a> 
+                <a title="Speakers List" href="../speakerlist">Speakers List</a> 
             </td>
             <td class="navigation">
-                <a title="Conference Program Day 2" href="programday2">Program Day 2</a> 
+                <a title="Conference Program" href="../programday1/">Program Day 1</a> 
+            </td>
+            <td class="navigation">
+                <a title="Conference Program Day 2" href=".">Program Day 2</a> 
             </td>
         </tr>
     </table>
 
+   
 
-    <h2>Day 2 Program (Oct 9, Sun)</h2>
+    <h2>Day 2 Program (Dec 10, Sun)</h2>
 
     <table>
-        <tr>
+        <tr class="speaker">
             <td class="date" rowspan="2">
                 9:00am
             </td>
             <td class="title-special">
-                Breakfast!
+                Opening.
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                <!-- Spacing -->
+                <!-- Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
+                Notice that the title is styled differently than the ones for talks. -->
             </td>
         </tr>
     </table>
 
-    <table id="Salman Avestimehr">
+    <table id="Eric Xing">
         <tr>
             <td class="date" rowspan="3">
                 9:30am
             </td>
             <td class="title">
-                Three daunting challenges of federated learning: privacy leakage, label deficiency, and resource constraints
+                TBD
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://www.avestimehr.com/"><b>Salman Avestimehr</b></a> (USC and FedML)
+                <a href="http://www.cs.cmu.edu/~epxing/"><b>Eric Xing</b></a> (MBZUAI and CMU)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Federated learning (FL) has emerged as a promising approach to to enable decentralized machine learning directly at the edge, in order to enhance users&apos; privacy, comply with regulations, and reduce development costs. In this talk, I will provide an overview of FL and highlight three fundamental challenges for landing FL into practice: (1) privacy and security guarantees for FL; (2) label scarcity at the edge; and (3) FL over resource-constrained edge nodes. I will also provide a brief overview of FedML (https://fedml.ai), which is a platform that enables zero-code, lightweight, cross-platform, and provably secure federated learning and analytics.
-            </td>
+                TBD
         </tr>
     </table>
-    <table id="Praneeth Vepakomma">
+
+
+    <table id="David Dao">
         <tr>
             <td class="date" rowspan="3">
-                10:00am
+                9:50am
             </td>
             <td class="title">
-                A pan-disciplinary view of distributed & private computation: Statistics, Geometry, ML & Social Choice
+                Compression: Exact Error Distribution and tight convergence rates for Federated Learning
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="http://praneeth.mit.edu/"><b>Praneeth Vepakomma</b></a> (MIT)
+                <a href="./"><b>Aymeric Dieuleveut</b></a> (Ecole Polytechnique)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Data in today&apos;s world is increasingly siloed across a wide variety of entities with varying resource constraints in collaboratively processing such data in order to draw actionable insights and wisdom. The quality of such wisdom is substantially better if such data is centralized at one spot prior to processing it, but this is prohibited due to privacy regulations, computational constraints, communication constraints, trade-secrets, trust issues and competition. This necessitates the development of distributed algorithms that are resource efficient for the entities involved while also preserving the privacy of this data and still ensure that the quality of wisdom obtained is on par with the case of data centralization. This talk covers some novel methods for the same in a pan-disciplinary manner tackling upstream problems with view-points in statistics, geometry, machine learning and social choice. Upstream problems are those root problems which when solved result in feeding into the solutions for several downstream problems leading to multi-pronged downstream impact.
-            </td>
+                Compression schemes have been extensively used in Federated Learning (FL) to reduce the communication cost of distributed learning. While most approaches rely on a bounded variance assumption of the noise produced by the compressor, we investigate two aspects to gain better understanding of the impact of compression on dynamics.
+First, we show the use of compression and aggregation schemes that produce a specific error distribution, e.g., Gaussian or Laplace, on the aggregated data. We present and analyze different aggregation schemes based on layered quantizers achieving exact error distribution. We provide different methods to leverage the proposed compression schemes to obtain compression-for-free in differential privacy applications. Our general compression methods can recover and improve standard FL schemes with Gaussian perturbations such as Langevin dynamics and randomized smoothing.
+Second, we go beyond the classical worst-case analysis. To do so, we focus on the case of least-squares regression (LSR) and analyze a general stochastic approximation algorithm for minimizing quadratic functions relying on a random field. We consider weak assumptions on the random field, tailored to the analysis (specifically, expected Holder regularity), and on the noise covariance, enabling the analysis of various randomizing mechanisms, including compression.
         </tr>
     </table>
-    <table class="plenary">
+
+    <table id="Eric Xing">
         <tr>
             <td class="date" rowspan="3">
-                10:30am
+                10:10am
             </td>
             <td class="title">
-                Federated learning, Model Parallelism, and Variational Inference
+                <font color="red"> (Keynote) </font> SuperFed: Cost-Efficient Federated Neural Architecture Search for On-Device Inference
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="http://www.cs.cmu.edu/~epxing/"><b>Eric Xing</b></a> (Mohamed Bin Zayed University of Artificial Intelligence)
+                <a href="./"><b>Alexey Tumanov</b></a> (Georgia Tech)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                <!-- TBA -->
-            </td>
+                Neural Architecture Search (NAS) for Federated Learning (FL) is an emerging field to automate the design and training of Deep Neural Networks (DNNs) when data cannot be centralized due to privacy, communication costs, and regulatory restrictions. Recent federated NAS methods not only reduce manual effort but also provide more accuracy than traditional FL like FedAvg which use predefined DNN architectures. However, most state-of-the-art federated NAS methods follow a multi-stage FL training that often leads to high communication costs. Furthermore, these methods severely restrict DNN architecture diversity and thereby provide sub-optimal architectures when on-device inference metrics like latency/FLOPs are considered. To address these challenges, we propose SuperFed: a single-stage federated NAS method that jointly trains a rich diversity of deep neural network (DNN) subarchitectures (subnets) contained inside a single DNN supernetwork. Clients can then perform NAS locally to find specialized DNNs by extracting different parts of the trained supernet with no additional training. SuperFed takes O(1) (instead of O(k)) cost to find specialized DNN architectures in FL for any k hardware/latency targets. As part of SuperFed, we introduce MaxNet — a novel FL training algorithm that performs joint federated optimization of a large number of DNN architectures cost-efficiently. MaxNet trains a family of ≈ 5*10^8 diverse subnets with an order of magnitude reduction in communication and computatoin cost compared to state-of-the-art.
         </tr>
     </table>
+
+
+
     <table>
         <tr>
             <td class="date" rowspan="2">
+                10:40pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="Michael I. Jordan">
+        <tr>
+            <td class="date" rowspan="3">
                 11:00am
             </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                11:30am
-            </td>
             <td class="title">
-                The Fed-BioMed Project: Deploying Federated Learning to Real-World Healthcare Applications
+                Federated Learning in Practice: Reflections and Projections
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://marcolorenzi.github.io/"><b>Marco Lorenzi</b></a> (Inria Sophia Antipolis)
+                <a href="https://scholar.google.com/citations?user=m8NUgw0AAAAJ&hl=en/"><b>Peter Kairouz</b></a> (Google)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Fed-BioMed is a research and development initiative aiming at translating federated learning (FL) to healthcare applications. The deployment of federated learning requires to tackle important challenges to meet the strict requirements of real-world conditions. While typical methodological issues concern the definition of optimization frameworks to handle clients&apos; heterogeneity and guarantee unbiasedness, the translation of federated learning research into practice poses novel technical and societal questions. Typical problems to be addressed concern FL security, scalability and interoperability, which motivate novel research directions and promote the close interactions between researchers, technicians and healthcare practitioners.<br>
-                During the talk I will provide an illustrations of the interplay between methodological development and translational effort that characterise the development of the Fed-BioMed FL platform, and discuss our current effort in delivering FL in hospitals networks.
-            </td>
+                Introduced in 2016 as a privacy-enhancing technique, federated learning has made significant strides in recent years. This presentation offers a retrospective view, delving into the foundational principles of federated learning, encompassing the diverse variants and definitions presented in the 'Advances and Open Problems in Federated Learning' manuscript. We highlight key milestones, spotlighting the major implementations within the Google ecosystem and explaining the meticulous efforts dedicated to the fusion of federated learning with secure aggregation and formal differential privacy guarantees. We also touch on the nascent trends on the horizon and provide insights into the evolving landscape of federated learning and its definitions. These evolutionary steps are essential to perpetuate its practical impact.
         </tr>
     </table>
-    <table>
+
+
+
+
+    <table id="David Dao">
         <tr>
             <td class="date" rowspan="3">
-                12:00pm
+                11:20am
             </td>
             <td class="title">
-                Modern Tools for Collaborative Medical Image Analysis
+                First Order Methods with Markovian Noise: from Acceleration to Variational Inequalities
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://research.nvidia.com/person/holger-roth"><b>Holger Roth</b></a> (NVIDIA)
+                <a href="./"><b>Serguei Samsonov</b></a> (MIPT)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                The COVID-19 pandemic has emphasized the need for large-scale collaborations by the clinical and scientific communities to tackle global healthcare challenges. However, regulatory constraints around data sharing and patient privacy might hinder access to genuinely representative patient populations on a global scale. Federated learning (FL) is a technology allowing us to work around such constraints while keeping patient privacy in mind. This talk will show how FL was used to predict clinical outcomes in patients with COVID-19 while allowing collaborators to retain governance over their data (Nature Medicine 2021). Furthermore, I will introduce several recent advances in FL, including quantifying potential data leakage, automated machine learning (AutoML) and neural architecture search (NAS), and personalization that can allow us to build more accurate and robust AI models.
-            </td>
+                We present a unified approach for the theoretical analysis of first-order gradient methods for stochastic optimization and variational inequalities involving Markovian noise. Our approach covers scenarios for both non-convex and strongly convex minimization problems. To achieve an optimal (linear) dependence on the mixing time of the underlying noise sequence, we use the randomized batching scheme, which is based on the multilevel Monte Carlo method. Moreover, our technique allows us to eliminate the limiting assumptions of previous research on Markov noise, such as the need for a bounded domain and uniformly bounded stochastic gradients. Our extension to variational inequalities under Markovian noise is original. Additionally, we provide lower bounds that match the oracle complexity of our method in the case of strongly convex optimization problems
         </tr>
     </table>
+
+
+
+    <table id="Samuel Horvath">
+        <tr>
+            <td class="date" rowspan="3">
+                11:40am
+            </td>
+            <td class="title">
+                Uncovering Low-Rank Structures via Trainable Decompositions
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="./"><b>Stefanos Laskaridis</b></a> (BRAVE)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                "Deep Neural Networks (DNNs) have been a large driver and enabler for AI breakthroughs in recent years. These models have been getting larger in their attempt to become more accurate and tackle new upcoming use-cases. However, the training process of such large models is a costly and time-consuming process, which typically yields a single model to fit all targets. To mitigate this, various techniques have been proposed in the literature, including pruning, sparsification or quantization of the model weights and updates. While able to achieve high compression rates, they often incur computational overheads or accuracy penalties. Alternatively, factorization methods have been leveraged to incorporate low-rank compression in the training process. Similarly, such techniques (e.g. SVD) frequently rely on the computationally expensive decomposition of layers and are potentially sub-optimal for non-linear models, such as DNNs. 
+
+In this talk, we are showcasing Maestro, a framework for trainable low-rank layers. Instead of regularly applying a priori decompositions such as SVD, the low-rank structure is built into the training process through a generalized variant of Ordered Dropout. This method imposes an importance ordering via sampling on the decomposed DNN structure. Our theoretical analysis demonstrates that our method recovers the SVD decomposition of linear mapping on uniformly distributed data and PCA for linear autoencoders. We further apply our technique on DNNs and empirically illustrate that Maestro enables the extraction of lower footprint models that preserve model performance while allowing for graceful accuracy-latency tradeoff for the deployment to devices of different capabilities."
+        </tr>
+    </table>
+
+
+
     <table>
         <tr>
             <td class="date" rowspan="2">
-                12:30am
+                12:00pm
             </td>
             <td class="title-special">
-                Lunch Break
+                Lunch and Poster Session
             </td>
         </tr>
         <tr>
@@ -195,96 +232,56 @@
         </tr>
     </table>
 
-    <table>
+
+    <table id="Eric Xing">
         <tr>
             <td class="date" rowspan="3">
-                1:30pm
+                2pm
             </td>
             <td class="title">
-                Implementable and Equitable Collaborative Learning in Healthcare: Issues and Solutions for Resource-Constrained Environments
+                <font color="red"> (Keynote) </font> Collaborative Learning in Medical Imaging
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://www.epfl.ch/labs/mlo/igh-intelligent-global-health/"><b>Mary-Anne Hartley</b></a> (EPFL)
+                <a href="https://www.nmr.mgh.harvard.edu/user/8165/"><b>Jayashree Kalpathy-Cramer</b></a> (UC Boulder)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Predictive medicine has particular potential in remote and resource-limited settings, where models can be trained to make predictions that replace expensive tests or unavailable expertise. In short, such algorithms can save lives (or end them depending on model performance). So how can we use collaborative learning to equitably distribute model performance? <br>
-                This talk covers some examples, issues, and potential solutions for implementing collaborative learning in high-stakes, low-resource healthcare settings.
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                2:00pm
-            </td>
-            <td class="title">
-                Deep Federated Learning in Helthcare
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://albarqouni.github.io/"><b>Shadi Albarqouni</b></a> (University Hospital Bonn &amp Helmholtz Munich)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                TBA.
-            </td>
+                Machine learning has shown impressive potential in healthcare, particularly in medical imaging. A lack of access to care in many parts of the globe highlights the need to develop safe and equitable algorithms using diverse datasets.  Despite a surge in research applying deep learning (DL) to problems in healthcare, there remains a gap in its translational impact. Critical hurdles in safely deploying DL algorithms are concerns around brittleness, bias and fairness. The creation of extensive, multi-institutional datasets can enhance model performance and generalizability, but assembling such datasets is challenging due to patient privacy concerns, regulatory hurdles, and financial constraints. Collaborative learning offers a promising way to build more robust models by leveraging diverse datasets without the need to share the data directly. Foundational approaches have also been proposed to address some of these challenges. But challenges remain when dealing with small or heterogenous datasets, as is frequently seen in healthcare.This talk will explore collaborative learning applications in fields such as radiology, oncology, and ophthalmology. We will wrap up with an overview of the practical and theoretical challenges faced in implementing collaborative learning in healthcare contexts.
         </tr>
     </table>
 
-    <table>
+    <table id="Eric Xing">
         <tr>
             <td class="date" rowspan="3">
                 2:30pm
             </td>
             <td class="title">
-                Secure and Federated Algorithms for Collaborative Genomic Studies
+                <font color="red"> (Keynote) </font> TBD
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://hhcho.com/"><b>Hoon Cho</b></a> (Broad Institute of MIT and Harvard)
+                <a href="https://www.anniehartley.info/"><b>Mary-Anne Hartley</b></a> (Yale and EPFL)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Genomic data are commonly held in data silos due to their sensitivity. This presents a key hurdle in genomics research, where access to data from large and diverse cohorts is crucial for extracting accurate biomedical insights. In this talk, I will describe our recent progress in facilitating cross-institutional collaboration in genomics with novel algorithmic tools. Synthesizing a range of modern techniques from applied cryptography, distributed algorithms and statistical genetics, we develop practical, secure and federated protocols for essential analysis tasks in genomics. These include the two most widely-used methods for genome-wide association studies (GWAS) based on principal component analysis (PCA) and linear mixed models (LMM). We demonstrate our methods on biobank-scale genomic datasets including hundreds of thousands of genomes. Finally, I will describe our recent efforts to deploy our tools to conduct a joint study between two large-scale genomic data repositories in the US that have never been jointly analyzed due to data sharing restrictions. Our work lays the foundation for broader collaboration in biomedical research.
-            </td>
+                TBD
         </tr>
     </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                3:00pm
-            </td>
-            <td class="title">
-                Collaborative Learning in Healthcare - A Path to more Generalizable Algorithms? 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://qtim-lab.github.io/"><b>Jayashree Kalpathy-Cramer</b></a> (University of Colorado/MGH/Harvard Med. School)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Deep learning has demonstrated great potential in healthcare, specifically medical imaging. Despite the explosion of publications that utilize deep learning in healthcare, few DL algorithms have truly transformed patient care. An on-going challenge to the safe deployment of DL algorithms is their brittleness especially when applied to out-of-distribution data. Bias and fairness continue to be challenges. Large multi-institutional datasets can improve the model performance and generalization. However, due to a variety of factors including patient privacy, regulatory and financial considerations, such datasets are not trivial to generate.  Collaborative learning approaches are potential mitigating strategies to develop more robust models by allowing models to be built using diverse datasets without the need for data sharing. Using examples from radiology, oncology and ophthalmology, we will discuss applications of collaborative learning in healthcare. We will conclude with a brief discussion of some of the practical and theoretical challenges of collaborative learning in healthcare.
-            </td>
-        </tr>
-    </table>
+
+
 
     <table>
         <tr>
             <td class="date" rowspan="2">
-                3:30am
+                3:00pm
             </td>
             <td class="title-special">
-                Coffee &amp; Tea Break
+                Panel Discussion and Coffee
             </td>
         </tr>
         <tr>
@@ -293,23 +290,12 @@
             </td>
         </tr>
     </table>
+
+
     
 
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="2">
-                4:30pm
-            </td>
-            <td class="title">
-                Panel Discussion: Challenges and Opportunities in Practical Applications of Collaborative Learning
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Panel discussing practical and deployment questions in CL.
-            </td>
-        </tr>
-    </table>
+    
+
+    
 </body>
 </html>
-

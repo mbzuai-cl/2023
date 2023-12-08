@@ -36,26 +36,25 @@
                 <a title="Speakers List" href="../speakerlist">Speakers List</a> 
             </td>
             <td class="navigation">
-                <a title="Conference Program" href=".">Program</a> 
+                <a title="Conference Program" href=".">Program Day 1</a> 
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="https://mbzuai.ac.ae/">MBZUAI</a> 
+                <a title="Conference Program Day 2" href="../programday2">Program Day 2</a> 
             </td>
-<!--             <td class="navigation">
-                <a title="Conference Program Day 2" href="programday2">Program Day 2</a> 
-            </td> -->
         </tr>
     </table>
+
+   
 
     <h2>Day 1 Program (Dec 9, Sat)</h2>
 
     <table>
-        <tr>
+        <tr class="speaker">
             <td class="date" rowspan="2">
-                8:30am
+                9:00am
             </td>
             <td class="title-special">
-                TBD
+                Registration and Opening!
             </td>
         </tr>
         <tr>
@@ -65,56 +64,349 @@
             </td>
         </tr>
     </table>
-<!--     <table>
-        <tr>
-            <td class="date" rowspan="2">
-                3:30pm
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract"> -->
-                <!-- Kept for Spacing -->
-<!--             </td>
-        </tr>
-    </table> -->
-<!--     <table id="Eduard Gorbunov">
+    <table id="Michael I. Jordan">
         <tr>
             <td class="date" rowspan="3">
-                4:00pm
+                9:30am
             </td>
             <td class="title">
-                Variance Reduction is an Antidote to Byzantines: Better Rates, Weaker Assumptions and Communication Compression as a Cherry on the Top
+                Statistical Inference, Asymmetry of Information, and Statistical Contract Theory
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://eduardgorbunov.github.io/"><b>Eduard Gorbunov</b></a> (MBZUAI)
+                <a href="http://people.eecs.berkeley.edu/~jordan/"><b>Michael I. Jordan</b></a> (UC Berkeley)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Byzantine-robustness has been gaining a lot of attention due to the growth of the interest in collaborative and federated learning. However, many fruitful directions, such as the usage of variance reduction for achieving robustness and communication compression for reducing communication costs, remain weakly explored in the field. This work addresses this gap and proposes Byz-VR-MARINA - a new Byzantine-tolerant method with variance reduction and compression. A key message of our paper is that variance reduction is key to fighting Byzantine workers more effectively. At the same time, communication compression is a bonus that makes the process more communication efficient. We derive theoretical convergence guarantees for Byz-VR-MARINA outperforming previous state-of-the-art for general non-convex and Polyak-Lojasiewicz loss functions. Unlike the concurrent Byzantine-robust methods with variance reduction and/or compression, our complexity results are tight and do not rely on restrictive assumptions such as boundedness of the gradients or limited compression. Moreover, we provide the first analysis of a Byzantine-tolerant method supporting non-uniform sampling of stochastic gradients. Numerical experiments corroborate our theoretical findings.
-            </td>
+                Contract theory is the study of economic incentives when parties transact in the presence
+of private information.  We augment classical contract theory to incorporate a role for
+learning from data, where the overall goal of the adaptive mechanism is to obtain desired
+statistical behavior.  We consider applications of this framework to problems in federated
+learning, the delegation of data collection, and principal-agent regulatory mechanisms.
         </tr>
-    </table> -->
-<!--     <table class="plenary">
+    </table>
+
+    <table id="Eric Moulines">
         <tr>
-            <td class="date" rowspan="2">
-                4:30pm
+            <td class="date" rowspan="3">
+                9:50am
             </td>
             <td class="title">
-                Panel Discussion: Theoretical advances and challenges in collaborative learning
+                Asynchronous Federated Learning meets Jackson networksson networks
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Panel discussing theoretical questions in FL.
+                <a href="./"><b>Eric Moulines</b></a> (Ecole Polytechnique)
             </td>
         </tr>
-    </table> -->
+        <tr>
+            <td class="abstract">
+                Our research deals with the asynchronous federated learning, where the nodes have different computational speeds. In this dynamic environment, each node works on models with potential delays and contributes to updates on the central server at its own pace. Existing analyzes of such algorithms often focus on rough bounds on average and  maximum node delay, often overlooking the fundamental queuing dynamics inherent in the system.
+
+In this work, we present a novel non-uniform sampling scheme tailored to FL with Central Server but asynchronous updates. Our approach analysis is based on the underlying closed Jackson network structure inherent in the computational graph. Our carefully designed experiments conclusively demonstrate the efficiency of our method compared to current asynchronous algorithms, especially evident in the context of image classification.
+
+Our work sheds light on the importance of queueing dynamics and customized sampling strategies to improve system performance. This research provides a promising avenue for optimizing distributed machine learning in scenarios characterized by unequal computational capacities. 
+        </tr>
+    </table>
+
+    <table id="Samuel Horvath">
+        <tr>
+            <td class="date" rowspan="3">
+                10:10am
+            </td>
+            <td class="title">
+                Partially Personalized Federated Learning: Breaking the Curse of Data Heterogeneity
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We present a partially personalized formulation of Federated Learning (FL) that
+strikes a balance between the flexibility of personalization and cooperativeness of
+global training. In our framework, we split the variables into global parameters,
+which are shared across all clients, and individual local parameters, which are
+kept private. We prove that under the right split of parameters, it is possible to find
+global parameters that allow each client to fit their data perfectly, and refer to the
+obtained problem as overpersonalized. For instance, the shared global parameters
+can be used to learn good data representations, whereas the personalized layers
+are fine-tuned for a specific client. Moreover, we present a simple algorithm for
+the partially personalized formulation that offers significant benefits to all clients.
+In particular, it breaks the curse of data heterogeneity in several settings, such as
+training with local steps, asynchronous training, and Byzantine-robust training.
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                10:30pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+    <table id="David Dao">
+        <tr>
+            <td class="date" rowspan="3">
+                11:00am
+            </td>
+            <td class="title">
+                <font color="red"> (Keynote) </font> TBD
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://daviddao.org/"><b>David Dao</b></a> (ETH Zurich)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                TBD
+        </tr>
+    </table>
+
+
+
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                11:30am
+            </td>
+            <td class="title">
+                FedPop: A Bayesian Approach for Personalised Federated Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="./"><b>Alain Durmus</b></a> (Ecole Polytechnique)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Personalised federated learning (FL) aims at collaboratively learning a machine learning model tailored for each client. Albeit promising advances have been made in this direction, most of the existing approaches do not allow for uncertainty quantification which is crucial in many applications. In addition, personalisation in the cross-silo and cross-device setting still involves important issues, especially for new clients or those having a small number of observations. This paper aims at filling these gaps. To this end, we propose a novel methodology coined FedPop by recasting personalised FL into the population modeling paradigm where clients’ models involve fixed common population parameters and random effects, aiming at explaining data heterogeneity. To derive convergence guarantees for our scheme, we introduce a new class of federated stochastic optimisation algorithms that relies on Markov chain Monte Carlo methods. Compared to existing personalised FL methods, the proposed methodology has important benefits: it is robust to client drift, practical for inference on new clients, and above all, enables uncertainty quantification under mild computational and memory overheads. We provide nonasymptotic convergence guarantees for the proposed algorithms and illustrate their performances on various personalised federated learning tasks.
+        </tr>
+    </table>
+
+
+
+    <table id="Eric Moulines">
+        <tr>
+            <td class="date" rowspan="3">
+                11:50am
+            </td>
+            <td class="title">
+                Power Learning and Posthoc Privacy for the Private Embedding Release Problem in Collaborative Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="./"><b>Praneeth Vepakomma</b></a> (MIT and MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                "Cloud-based machine learning inference is an emerging paradigm where users
+query by sending their data through a service provider who runs an ML model
+on that data and returns the answer. This talk shares a new framework of ""Posthoc Privacy"" that provides formal privacy guarantees for an arbitrarily trained neural network by
+linking its local Lipschitz constant with its local sensitivity for releasing the learnt representations (embeddings). To guarantee privacy using local sensitivity, we extend the Propose-Test-Release (PTR) framework to make it tractable for neural network queries to enable a private collaborative inference.  We then share a ""Power Mechanism"" that guarantees privacy for 'embedding' release and instead enables distributed training that requires only one round of communication. "
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:15pm
+            </td>
+            <td class="title-special">
+                Lunch
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                1:30pm
+            </td>
+            <td class="title">
+                Federated Conformal Predictors for Distributed Uncertainty Quantification
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://yaodongyu.github.io/"><b>Yaodong Yu</b></a> (UC Berkeley)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Conformal prediction is emerging as a popular paradigm for providing rigorous uncertainty quantification in machine learning since it can be easily applied as a post-processing step to already trained models. In this paper, we extend conformal prediction to the federated learning setting. The main challenge we face is data heterogeneity across the clients — this violates the fundamental tenet of exchangeability required for conformal prediction. We propose a weaker notion of partial exchangeability, better suited to the FL setting, and use it to develop the Federated Conformal Prediction (FCP) framework. We show FCP enjoys rigorous theoretical guarantees and excellent empirical performance on several computer vision and medical imaging datasets. Our results demonstrate a practical approach to incorporating meaningful uncertainty quantification in distributed and heterogeneous environments. We provide code used in our experiments https://github.com/clu5/federated-conformal.
+        </tr>
+    </table>
+
+
+
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                1:50pm
+            </td>
+            <td class="title">
+                Overcoming Data Heterogeneity Challenges in Federated Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="./"><b>Xiaoxiao Li</b></a> (University of British Columbia)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To overcome barriers of data sharing, federated learning (FL) is a trending framework to enable multi-institutional collaboration in machine learning. This presentation will discuss our ongoing progress in designing FL algorithms that embrace the heterogeneity properties of data from theory to practice. First, I will present our work on theoretically understanding FL training convergence and generalization using neural tangent kernel, called FL-NTK. Second, I will present our algorithms for tackling feature heterogeneity, label heterogeneity, and device heterogeneity.  Third, I will present our up-to-date progress and promising future directions in FL for heterogenous data analysis.
+        </tr>
+    </table>
+
+
+
+
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                2:10pm
+            </td>
+            <td class="title">
+                TBD
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="./"><b>Karthik Nandakumar</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                TBD
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                2:30pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+    
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                3:00pm
+            </td>
+            <td class="title">
+                How to Collaborate with your Friends and Foes
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="http://spkreddy.org/"><b>Sai Praneeth Karimireddy</b></a> (UC Berkeley)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We study the objective of a participant in FL in two settings. First, in the friendly setting, all participants want to improve their own model quality but do not mind improving each other's as well. In this setting, we show how clustering naturally emerges as the optimal algorithm to simultaneously improve everyone's model quality. In the second setting, the participants could be competing firms - in such a setting they care about doing better than others i.e. the relative quality. Even in this competitive setting, we show defection-proof iterative federated algorithms which is guaranteed to  simultaneously improve the utilities of all participants.
+        </tr>
+    </table>
+
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                3:20pm
+            </td>
+            <td class="title">
+                Data Valuation & Incentives in Collaborative Machine Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://scholar.google.com/citations?user=2P-Q09UAAAAJ&hl=en/"><b>Bryan Kian Hsiang Low</b></a> (National University of Singapore)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In this talk, Dr. Bryan Low will present his preliminary research efforts in valuing data and incentivizing multiple parties with data to collaborate in building higher-quality models, such as through the fairness, individual rationality, and privacy incentives. 
+        </tr>
+    </table>
+
+    <table id="Eric Xing">
+        <tr>
+            <td class="date" rowspan="3">
+                3:40pm
+            </td>
+            <td class="title">
+                Towards Auction-based Federated Learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://sites.google.com/site/hanyushomepage/home/"><b>Han Yu</b></a> (Nanyang Technological University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Federated Learning (FL) is an emerging area of AI focusing on training machine learning models in a privacy-preserving manner. The success of FL, especially in open collaboration settings, rests on being able to continuously attract high quality data owners to participate. This, at the same time, also opens the FL to adversaries trying to exploit other parties’ sensitive privacy information. It is important to adopt an ecosystem management approach to building trust and controlling risk in FL. In this talk, I will share with you some attempts we made at the Trustworthy Federated Ubiquitous Learning (TrustFUL) Research Lab in the direction of incorporating auction mechanisms into FL to support dynamic formation of collaborative machine learning groups and provide the necessary governance to support the long-term sustainable operation of such an ecosystem.
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                4pm
+            </td>
+            <td class="title-special">
+                Panel Discussion
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+
+    
+
+    
+
+    
 </body>
 </html>
-
